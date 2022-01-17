@@ -19,7 +19,13 @@ mongoose
     console.log('MongoDB connected successfully at ' + environment[env].dbString)
   })
   .then ( () => {
-    
+    amqp.connect(environment[env].rabbitmqString, (error0, connection)=> {
+      if (error0) {
+        throw error0;
+      }
+
+      console.log('RabittMQ connected successfully at ' + environment[env].rabbitmqString)
+
       /**
       * Apollo Server
       **/
@@ -49,6 +55,7 @@ mongoose
             console.log(`GQL Example service A ready at url: ${url}`);
         });
     })
+  })
   .catch( (err) => {
       console.error(err);
   })
