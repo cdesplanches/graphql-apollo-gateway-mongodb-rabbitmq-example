@@ -8,7 +8,7 @@
   </a>
 </p>
 
-> This exqmple use a graphql gateway to regroup all sub-graphql into a consolidated one. It also use rabbitmq and mongodb under the hood.
+> This example uses a graphql gateway to regroup all sub-graphql into a consolidated one. It also uses rabbitmq and mongodb under the hood.
 
 ## Install
 
