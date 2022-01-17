@@ -1,0 +1,19 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "This is the GraphQL Gateway for all microservices.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "GraphQL",
+    "Gateway"
+  ],
+  "author": "Christophe Desplanches",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/gateway": "^0.45.1",
+    "apollo-server": "^3.6.1"
+  }
+}
